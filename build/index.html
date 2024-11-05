@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Index</title>
 
     <link rel="stylesheet" href="./css/style.min.css" />
@@ -12,7 +13,7 @@
   <body class="main__body">
     <main>
       <div class="main__wrapper">
-    <section class="sidebar">
+    <section  data-aos="fade-right" data-aos-duration="2000" class="sidebar ">
   <div class="sidebar__wrapper">
     <div class="sidebar__logo">
       <img src="/img/sidebar/logo.png" alt="logo" />
@@ -100,7 +101,7 @@
   </div>
 </section>
 
-    <section class="customers active">
+    <section data-aos="fade-left" data-aos-duration="2000" class="customers active">
   <div class="customers__burger">
     <svg class="customers__burger-menu">
       <use xlink:href="img/sidebar/burger.svg#burger"></use>
@@ -241,10 +242,13 @@
 
     </div>
     </main>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
   </body>
 
 
-
   <script src="./js/scripts.min.js"></script>
+
 </html>

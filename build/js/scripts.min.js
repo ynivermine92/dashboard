@@ -29,3 +29,5 @@ sidebarItems.forEach((item) => {
         customers.classList.add('active');
     })
 })
+
+
