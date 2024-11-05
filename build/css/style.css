@@ -3,9 +3,16 @@ body {
   font-weight: 400;
 }
 
+.customers .title,
+.sidebar__box-name,
 .sidebar__text {
   font-family: "Poppins-Medium";
   font-weight: 500;
+}
+
+.customers h2 {
+  font-family: "Poppins-SemiBold";
+  font-weight: 600;
 }
 
 * {
@@ -77,10 +84,10 @@ h6 {
 }
 
 .container {
-  max-width: 1240px;
+  max-width: 968px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 body.locked {
@@ -274,15 +281,115 @@ body.dark {
 
 .sidebar__box-name {
   margin-bottom: 4px;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  margin-top: 4px;
 }
 
-.main__wrapper {
+.sidebar__box-text {
+  font-size: 12px;
+}
+
+.customers {
+  margin: 41px 0px 0px 69px;
+  display: table-cell;
+  width: 100%;
+  max-width: 968px;
+}
+
+.customers .container {
+  border: 1px solid red;
+}
+
+.customers__wrapper {
+  padding: 0px 0px 41px 38px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+          box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+  background: rgb(255, 255, 255);
+}
+
+.customers .title {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  margin-bottom: 51px;
+}
+
+.customers h2 {
+  font-size: 22px;
+  margin-top: 29px;
+}
+
+.customers__sub-title {
+  color: rgb(22, 192, 152);
+  font-size: 14px;
+  margin-top: 7px;
+  margin-bottom: 40px;
+}
+
+.customers__inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-table {
+.customers__searsh {
+  position: relative;
+  margin-left: 53px;
+  margin-right: 53px;
+  margin-top: 43px;
+}
+
+.customers__searsh-input {
+  max-width: 216px;
+  width: 100%;
+  border-radius: 10px;
+  background: rgb(249, 251, 255);
+  padding: 10px 10px 10px 40px;
+  height: 38px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.customers__searsh-input::-webkit-input-placeholder {
+  font-size: 12px;
+  color: rgb(181, 183, 192);
+}
+
+.customers__searsh-input::-moz-placeholder {
+  font-size: 12px;
+  color: rgb(181, 183, 192);
+}
+
+.customers__searsh-input:-ms-input-placeholder {
+  font-size: 12px;
+  color: rgb(181, 183, 192);
+}
+
+.customers__searsh-input::-ms-input-placeholder {
+  font-size: 12px;
+  color: rgb(181, 183, 192);
+}
+
+.customers__searsh-input::placeholder {
+  font-size: 12px;
+  color: rgb(181, 183, 192);
+}
+
+.customers__icon-searsh {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  z-index: 1;
+  top: 4px;
+  left: 8px;
+}
+
+.customers__table {
   max-width: 900px;
   width: 100%;
 }
@@ -329,16 +436,10 @@ td {
   font-size: 12px;
 }
 
-@media (max-width: 1449.98px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-@media (max-width: 991.98px) {
-  .container {
-    max-width: 970px;
-  }
+.main__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (max-width: 900px) {
@@ -395,12 +496,6 @@ td {
     float: left;
     font-weight: bold;
     text-transform: uppercase;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .container {
-    max-width: 740px;
   }
 }
 

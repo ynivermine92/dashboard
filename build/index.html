@@ -12,7 +12,7 @@
   <body class="main__body">
     <main>
       <div class="main__wrapper">
-    <div class="sidebar">
+    <section class="sidebar">
   <div class="sidebar__wrapper">
     <div class="sidebar__logo">
       <img src="/img/sidebar/logo.png" alt="logo" />
@@ -94,50 +94,76 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
-    <div class="wrapper">
+    <section class="customers">
+  <!-- <div class="container"> -->
+  <h1 class="title">Hello Evano 👋🏼,</h1>
+  <div class="customers__wrapper">
+  <div class="customers__inner">
+    <div class="customers__box">
+      <h2 class="customers__title">All Customers</h2>
+      <div class="customers__sub-title">Active Members</div>
+    </div>
+    <form class="customers__searsh" action="/search" method="GET">
+      <svg class="customers__icon-searsh">
+        <use xlink:href="/img/search.svg#searsh"></use>
+      </svg>
+      <input
+        class="customers__searsh-input"
+        type="text"
+        name="query"
+        placeholder="Search"
+        required
+      />
+    </form>
+  </div>
+
+  <div class="customers__table">
     <table>
-
-    <thead>
-      <tr>
-        <th scope="col">Customer Name</th>
-        <th scope="col">Company</th>
-        <th scope="col">Phone Number</th>
-        <th scope="col">Email</th>
-        <th scope="col">Country</th>
-        <th scope="col">Status</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td data-label="Account">Jane Cooper</td>
-        <td data-label="Due Date">Microsoft</td>
-        <td data-label="Amount">(225) 555-0118</td>
-        <td data-label="Period">jane@microsoft.com</td>
-        <td data-label="Period">United States</td>
-        <td data-label="Period">active</td>
-      </tr>
-      <tr>
-        <td data-label="Account">Jane Cooper</td>
-        <td data-label="Due Date">Microsoft</td>
-        <td data-label="Amount">(225) 555-0118</td>
-        <td data-label="Period">jane@microsoft.com</td>
-        <td data-label="Period">United States</td>
-        <td data-label="Period">active</td>
-      </tr>
-      <tr>
-        <td data-label="Account">Jane Cooper</td>
-        <td data-label="Due Date">04/01/2016</td>
-        <td data-label="Amount">(225) 555-0118</td>
-        <td data-label="Period">jane@microsoft.com</td>
-        <td data-label="Period">United States</td>
-        <td data-label="Period">active</td>
-      </tr>
-
-    </tbody>
-  </table>
+      customers
+      <thead>
+        <tr>
+          <th scope="col">Customer Name</th>
+          <th scope="col">Company</th>
+          <th scope="col">Phone Number</th>
+          <th scope="col">Email</th>
+          <th scope="col">Country</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Account">Jane Cooper</td>
+          <td data-label="Due Date">Microsoft</td>
+          <td data-label="Amount">(225) 555-0118</td>
+          <td data-label="Period">jane@microsoft.com</td>
+          <td data-label="Period">United States</td>
+          <td data-label="Period">active</td>
+        </tr>
+        <tr>
+          <td data-label="Account">Jane Cooper</td>
+          <td data-label="Due Date">Microsoft</td>
+          <td data-label="Amount">(225) 555-0118</td>
+          <td data-label="Period">jane@microsoft.com</td>
+          <td data-label="Period">United States</td>
+          <td data-label="Period">active</td>
+        </tr>
+        <tr>
+          <td data-label="Account">Jane Cooper</td>
+          <td data-label="Due Date">04/01/2016</td>
+          <td data-label="Amount">(225) 555-0118</td>
+          <td data-label="Period">jane@microsoft.com</td>
+          <td data-label="Period">United States</td>
+          <td data-label="Period">active</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+  <!--   </div> -->
+</section>
+
     </div>
     </main>
 

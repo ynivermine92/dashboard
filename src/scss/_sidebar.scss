@@ -113,6 +113,13 @@
 
     &__box-name {
         margin-bottom: 4px;
+        color: rgb(0, 0, 0);
+        @extend %pop-500;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+    &__box-text{
+        font-size: 12px;
     }
 
 }

@@ -1,0 +1,190 @@
+.customers {
+    margin: 41px 0px 0px 69px;
+    display: table-cell;
+    width: 100%;
+    max-width: 968px;
+
+    .container {
+        border: 1px solid red;
+    }
+
+    &__wrapper {
+        padding: 0px 0px 41px 38px;
+        border-radius: 30px;
+        box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
+        background: rgb(255, 255, 255);
+    }
+
+    .title {
+        color: rgb(0, 0, 0);
+        font-size: 24px;
+        @extend %pop-500;
+        margin-bottom: 51px;
+    }
+
+    h2 {
+        font-size: 22px;
+        @extend %pop-600;
+        margin-top: 29px;
+    }
+
+    &__sub-title {
+        color: rgb(22, 192, 152);
+        font-size: 14px;
+        margin-top: 7px;
+        margin-bottom: 40px;
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__searsh{
+        position: relative;
+        margin-left: 53px;
+        margin-right: 53px;
+        margin-top: 43px;
+    }
+    &__searsh-input{
+        max-width: 216px;
+        width: 100%;
+        border-radius: 10px;
+        background: rgb(249, 251, 255);
+        padding: 10px 10px 10px 40px;
+        height: 38px;
+        border: none; 
+        outline: none;
+        cursor: pointer;
+        &::placeholder{
+            font-size: 12px;
+            color: rgb(181, 183, 192);
+            
+        }
+    }
+
+    &__icon-searsh {
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        z-index: 1;
+        top: 4px;
+        left: 8px;
+    }
+}
+
+
+
+
+
+
+
+
+.customers__table {
+    max-width: 900px;
+    width: 100%;
+}
+
+thead {
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #EEEEEE;
+        max-width: 40px;
+        width: 100%;
+        height: 1px;
+        left: -37px;
+        top: 28px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        border-bottom: 1px solid #EEEEEE;
+        max-width: 40px;
+        width: 100%;
+        right: -38px;
+        top: 28px;
+    }
+}
+
+th {
+    padding-bottom: 14px;
+    text-align: start;
+    color: #B5B7C0;
+    font-size: 12px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #EEEEEE;
+}
+
+td {
+    padding: 24px 0;
+    font-size: 12px;
+}
+
+
+
+
+@media (max-width: 900px) {
+    table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    thead::before {
+        top: 30px;
+    }
+
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+
+
+}
