@@ -6,10 +6,15 @@
 // Sections or Pages SCSS-files imports
 @import './sidebar';
 @import './customers';
+@import './pagination';
 
 
-.main__wrapper{
+.main__wrapper {
   display: flex;
 }
 
-
+@media (max-width: 650px) {
+  .main__wrapper {
+    display: block;
+  }
+}

@@ -1,13 +1,13 @@
 .sidebar {
     box-shadow: 0px 10px 60px 0px rgba(226, 236, 249, 0.5);
     background: rgb(255, 255, 255);
-    min-height: 306px;
     width: 100%;
     max-width: 306px;
+    transition: all 0,5s;
 
     &__wrapper {
         padding-top: 36px;
-        height: 100vh;
+
     }
 
     &__logo {
@@ -85,13 +85,13 @@
     &__arrow {
         height: 16px;
         width: 16px;
-        fill: solid rgb(145, 151, 179);
+        stroke: rgb(145, 151, 179);
     }
 
     &__user {
-        position: absolute;
-        bottom: 76px;
-        left: 26px;
+        padding-top: 600px;
+        padding-left: 26px;
+        padding-bottom: 80px;
         display: flex;
     }
 
@@ -110,7 +110,7 @@
     }
 
     &__icon-income {
-        stroke:#9197B3
+        stroke: #9197B3
     }
 
     &__box-name {
@@ -120,8 +120,82 @@
         font-size: 14px;
         margin-top: 4px;
     }
-    &__box-text{
+
+    &__box-text {
         font-size: 12px;
+        color: rgb(117, 117, 117);
+
+
     }
 
+    &__burger-clouse {
+        display: none;
+    }
+
+}
+
+
+
+
+@media (max-width: 818px) {
+    .sidebar {
+        .sidebar__item+.sidebar__item {
+            margin-top: 10px;
+        }
+    }
+
+}
+
+
+@media (max-width: 650px) {
+    .sidebar {
+        display: none;
+
+        &__burger-clouse {
+            display: block;
+            position: absolute;
+            top: 10px;
+            right: 30px;
+            cursor: pointer;
+        }
+
+        &__clouse {
+            height: 30px;
+            width: 30px;
+        }
+
+    }
+
+    .sidebar.active {
+        display: block;
+        position: relative;
+        min-height: 100vh;
+        max-width: 100%;
+        transition: all 0,5s;
+        &__logo {
+            padding-left: 0px;
+            border: 1px solid red;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__items {
+            width: 100%;
+        }
+
+        .sidebar__item+.sidebar__item {
+            margin-top: 20px;
+        }
+
+        .sidebar__user{
+            padding-top: 100px;
+            padding-bottom: 60px;
+
+        }
+
+    }
 }
